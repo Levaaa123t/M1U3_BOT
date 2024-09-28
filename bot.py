@@ -59,7 +59,6 @@ def make_some(message):
     bot.send_message(message.chat.id, 'Добавлен новый пользователь! Привет'+ message.from_user.first_name+ '!')
     bot.approve_chat_join_request(message.chat.id, message.from_user.id)
 
-
     
 
 @bot.message_handler(commands=['help'])
